@@ -15,7 +15,6 @@ The project consists of the following files and directories:
 
 ## Features
 
-- Responsive design using Bootstrap.
 - Navigation bar with links to Home, Contact, and About pages.
 - Display of code blocks as mini webpages within the main page.
 - Contact form for user inquiries.
