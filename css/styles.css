@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-brand i {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icons a.github {
+    color: #000000;
+    /* GitHub color */
+}
+
+.social-icons a.facebook {
+    color: #316FF6;
+    /* Facebook color */
+}
+
+.social-icons a.linkedin {
+    color: #0a66c2;
+    /* LinkedIn color */
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+    background-color: #800020;
+    color: white;
+    padding: 25px 0; /* Reduced padding to make the hero area smaller */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card.visible {
+    animation: easeIn 1s forwards;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-icons a.github {
+    color: #000000;
+    /* GitHub color */
+}
+
+.footer .social-icons a.facebook {
+    color: #316FF6;
+    /* Facebook color */
+}
+
+.footer .social-icons a.linkedin {
+    color: #0a66c2;
+    /* LinkedIn color */
+}
+
+.footer .social-icons a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+@keyframes easeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
